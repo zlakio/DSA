@@ -7,8 +7,9 @@ def pivotIndex(nums):
         right = s - left - nums[i]
 
         if right == left:
-            return right
+            return i
         left = left + nums[i]
+    return -1
 
 
-print(pivotIndex(nums=[2, 0, 2, 3, 9]))
+print(pivotIndex(nums=[2, 0, 2, 3, 4]))
